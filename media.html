@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media</title>
+</head>
+
+<body>
+  <h1>Responsive Image with Picture Element</h1>
+  <picture>
+    <!--mobile view-->
+    <source srcset="./asset/E3.jpg" media="(max-width:300px)" />
+    <!--Tablet view-->
+    <source srcset="./asset/E2.jpg" media="(min-width:769px) and (max-width:1024px)" />
+    <!--laptop view-->
+    <source srcset="./asset/E8.jpg" media="(min-width:1025px)" />
+
+    <img src="./asset/computer accesserie.jpg" alt="computer" />
+  </picture>
+  <br>
+  <!-- Audio Element -->
+  <h2>Listen to My Thoughts</h2>
+  <audio controls>
+    <source src="./asset/my rec.mp3.opus" type="audio/mpeg" />
+    <source src="audio/my-voice.ogg" type="audio/ogg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <br />
+
+  <!-- Video Element -->
+  <h2>Watch My Journey</h2>
+
+  <video src="./asset/web devs.mp4" controls></video>
+  <br>
+  <!--navigating to home page  -->
+  <a href="./Index.html">home page</a>
+
+
+</body>
+
+</html>
